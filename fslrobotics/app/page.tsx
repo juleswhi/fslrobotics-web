@@ -3,7 +3,7 @@ export default function Home() {
         <div>
             Friends School Lisburn
             <br/>
-            <b>Robotics</b>
+            <b><i>Robotics</i></b>
         </div>
     );
 }
