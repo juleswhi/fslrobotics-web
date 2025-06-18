@@ -1,9 +1,9 @@
-import Image from "next/image";
-
 export default function Home() {
     return (
-        <p>
-            FSL ROBOTICS
-        </p>
+        <div>
+            Friends School Lisburn
+            <br/>
+            <b>Robotics</b>
+        </div>
     );
 }
