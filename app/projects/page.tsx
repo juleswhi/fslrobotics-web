@@ -14,7 +14,7 @@ export default function Home() {
           <ImageCard
             href="/projects/gamepadex"
             title="GamepadEx"
-            text="Super ergonomic gamepad binding"
+            text="Ergonomic gamepad bindings"
             src="/controller.jpg"
             width={250}
           />
