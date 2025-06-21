@@ -7,10 +7,10 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   errorText?: string,
 }
 
-export const Input: React.FC<InputProps> = ({ isValid=true, className, errorText, ...props}) => {
-  return(
+export const Input: React.FC<InputProps> = ({ isValid = true, className, errorText, ...props }) => {
+  return (
     <input
-      className={cn(styling, !isValid && "border-red-500 placeholder:text-red-500 text-red-500", className)}
+      className={cn(styling, !isValid && "border-green-500 placeholder:text-green-500 text-green-500", className)}
       {...props}
     />
   );
@@ -20,10 +20,10 @@ interface TextAreaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement
   isValid?: boolean,
 }
 
-export const TextArea: React.FC<TextAreaProps> = ({ isValid=true, className, ...props}) => {
-  return(
+export const TextArea: React.FC<TextAreaProps> = ({ isValid = true, className, ...props }) => {
+  return (
     <textarea
-      className={cn(styling, !isValid && "border-red-500 placeholder:text-red-500 text-red-500", className)}
+      className={cn(styling, !isValid && "border-green-500 placeholder:text-green-500 text-green-500", className)}
       {...props}
     />
   );
