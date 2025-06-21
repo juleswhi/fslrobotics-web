@@ -17,8 +17,8 @@ export default function ContactForm() {
 
   const ref = useRef<HTMLFormElement>(null);
 
-  return(
-    <form 
+  return (
+    <form
       ref={ref}
       onSubmit={async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -65,7 +65,7 @@ export default function ContactForm() {
           isValid={nameValid}
           disabled={loading}
         />
-        {!nameValid && <a className="text-red-500">Please input a valid name</a>}
+        {!nameValid && <a className="text-green-500">Please input a valid name</a>}
       </div>
 
 
@@ -76,7 +76,7 @@ export default function ContactForm() {
           isValid={emailValid}
           disabled={loading}
         />
-        {!emailValid && <a className="text-red-500">Please input a valid email</a>}
+        {!emailValid && <a className="text-green-500">Please input a valid email</a>}
       </div>
 
       <div className="flex flex-col gap-2 w-full h-[17rem]">
@@ -87,11 +87,11 @@ export default function ContactForm() {
           isValid={messageValid}
           disabled={loading}
         />
-        {!messageValid && <a className="text-red-500">Please input a valid message</a>}
+        {!messageValid && <a className="text-green-500">Please input a valid message</a>}
       </div>
 
-      <button type="submit" className={cn("flex bg-red-500 p-3 w-40 rounded-lg gap-2 justify-center", loading && "bg-red-700 text-gray-100")} disabled={loading}>
-        {loading ? <> <Spinner/> Sending... </> : <> Submit </>}
+      <button type="submit" className={cn("flex bg-green-500 p-3 w-40 rounded-lg gap-2 justify-center", loading && "bg-green-700 text-gray-100")} disabled={loading}>
+        {loading ? <> <Spinner /> Sending... </> : <> Submit </>}
       </button>
     </form>
   );
