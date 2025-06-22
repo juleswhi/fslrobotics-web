@@ -1,4 +1,5 @@
 import Hero from "@/components/hero";
+import Image from "next/image";
 import { Mouse } from "@/components/mouse-art";
 import MouseCord from "@/components/mouse-cord";
 
@@ -15,6 +16,9 @@ export default function Home() {
                 <p>
                     Based in Lisburn, UK.
                 </p>
+
+
+                <Image src="/robot-crop.jpeg" alt="FTC Centerstage Logo" sizes="100vw" width="0" height="0" className="w-96 rounded-md justify-center flex-col m-auto relative" />
             </div>
         </div>
     );
