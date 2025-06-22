@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="flex justify-between max-w-screen-md m-auto text-white items-center mx-auto p-4">
 
           <div className="">
-            <Image src="/fsl.png" className="justify-start" width={50} height={50} />
+            <Image src="/fsl.png" className="justify-start" alt="logo" width={50} height={50} />
           </div>
 
           <ul className="hidden sm:flex gap-4 justify-center w-full">
